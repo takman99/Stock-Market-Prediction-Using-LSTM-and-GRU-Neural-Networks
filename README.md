@@ -1,18 +1,19 @@
 # Stock-Market-Prediction-Using-LSTM-and-GRU-Neural-Networks
 Stock Market Prediction Using LSTM and GRU Neural Networks - Research Project
 
+# Testing Range
 The current S&P500 testing range is 400-day. To adjust the testing range, simply update the following code under each model:
 training_data_len = len(dataset) - 400
 
 
-
+# Downloading and unpacking the data
 The results can be downloaded using the 'pickle' library. Afterwards, the data can be unpacked using the following command:
 
 import pickle
 with open('gru_multi_400.pickle', 'rb') as f:
     loaded_variables = pickle.load(f)
 
-# Unpack the variables
+
 data = loaded_variables['data']
 training_data_len = loaded_variables['training_data_len']
 scaler = loaded_variables['scaler']
