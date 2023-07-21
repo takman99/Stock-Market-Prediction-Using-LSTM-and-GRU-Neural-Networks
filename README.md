@@ -15,7 +15,9 @@ with open('gru_multi_400.pickle', 'rb') as f:
 
 
 data = loaded_variables['data']
+
 training_data_len = loaded_variables['training_data_len']
+
 scaler = loaded_variables['scaler']
 x_train = loaded_variables['x_train']
 y_train = loaded_variables['y_train']
